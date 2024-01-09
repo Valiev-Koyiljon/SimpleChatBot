@@ -157,7 +157,7 @@ pairs = [
     ],
     [
         r"How can I contact Koyilbek",
-        ["You can contact Koyilbek via email at valievkoyiljon112@gmail.com or through his LinkedIn profile: [LinkedIn Profile Link]"]
+        ["You can contact Koyilbek via email at valievkoyiljon112@gmail.com or through his LinkedIn profile: https://www.linkedin.com/in/koyiljonvaliev2003/"]
     ],
     [
         r"Tell me about Koyilbek's portfolio",
