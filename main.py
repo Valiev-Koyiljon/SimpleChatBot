@@ -36,7 +36,7 @@ pairs = [
     ],
     [
         r"(.*) (age|old) ?",
-        ["I'm a computer program, I don't have an age!"]
+        ["Koyilbek is 21 years old"]
     ],
     [
         r"(.*) (created|made) ?",
@@ -44,7 +44,7 @@ pairs = [
     ],
     [
         r"(.*) (portfolio) ?",
-        ["You can check out my creator's portfolio at their website."]
+        ["You can check out Koyilbek's portfolio at their website: https://valiev-koyiljon.github.io/Web/"]
     ],
       [
         r"hi|hello|hey",
