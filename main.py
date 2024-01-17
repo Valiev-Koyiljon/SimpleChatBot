@@ -236,67 +236,6 @@ def chat(message):
     response = chatbot.respond(message)
     return response if response else "I'm sorry, I do not have an answer for this question."
 
-# # Streamlit app
-# def main():
-#     st.title("Simple ChatBot")
-#     st.title("List of Questions")
-
-#     st.write("Here is a list of questions:")
-#     for index, question in enumerate(questions, start=1):
-#         st.write(f"{index}. {question}")
-#     st.markdown(
-#         """
-#         <style>
-#         .stApp {
-#             background-color: #f0f0f0;
-#         }
-#         .stTextInput > div > div > input {
-#             border: 2px solid #0080ff;
-#             border-radius: 5px;
-#             padding: 8px 10px;
-#             ::placeholder {
-#                 color: #aaa;
-#                 opacity: 0.5;
-#             }
-#         }
-#         .stButton button {
-#             background-color: #0080ff;
-#             color: white;
-#             border-radius: 5px;
-#             padding: 8px 15px;
-#         }
-#         .stMarkdown {
-#             font-weight: bold;
-#             color: #0080ff;
-#         }
-#         </style>
-#         """,
-#         unsafe_allow_html=True
-#     )
-
-#     st.write("Hi! I'm a simple ChatBot. You can ask about Koyilbek Valiev.")
-
-#     user_input = st.text_input("Enter your message here:", value='', help='Type here...')
-
-#     if st.button("Send"):
-#         if user_input:
-#             bot_response = chat(user_input)
-#             conversation_history.append({"user": user_input, "bot": bot_response})
-
-#             for conv in conversation_history:
-#                 st.markdown(
-#                     f"<div style='padding: 5px;'>You: {conv['user']}</div>"
-#                     f"<div style='padding: 5px;'>Bot: {conv['bot']}</div>",
-#                     unsafe_allow_html=True
-#                 )
-            
-#             st.markdown("<hr>", unsafe_allow_html=True)  # Add a horizontal line to separate conversations
-#         else:
-#             st.warning("Please enter a message!")
-
-# if __name__ == "__main__":
-#     main()
-
 
 # Create a chatbot
 chatbot = Chat(pairs, reflections)
