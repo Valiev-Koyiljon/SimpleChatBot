@@ -155,7 +155,6 @@ questions = [
     "What are Koyilbek's notable achievements?"
 ]
 
-
 # # Create a chatbot
 # chatbot = Chat(pairs, reflections)
 
