@@ -86,6 +86,10 @@ pairs = [
             "Koyilbek's team won 1st Place in Woosong University's capstone project contest, competing against 200+ teams from 29 departments. They developed an AI-based solution for optimizing garbage collection in South Korea using YOLOv8 technology."
         ]
     ],
+
+
+
+    
     [
         r"solar power|energy management",
         [
@@ -115,7 +119,117 @@ pairs = [
     [
         r"bye|goodbye",
         ["Goodbye! Have a great day!", "Bye! Take care."]
+    ],
+
+        [
+        r"how old is Koyilbek|age",
+        ["Koyilbek was born in 2003."]
+    ],
+    [
+        r"where is Koyilbek from|nationality|origin",
+        ["Koyilbek is from Uzbekistan."]
+    ],
+    [
+        r"where does Koyilbek (currently |)live|current location",
+        ["Koyilbek currently resides in Daejeon, South Korea."]
+    ],
+
+    # Contact Information
+    [
+        r"what is Koyilbek's email|email",
+        ["Koyilbek's email is valievkoyiljon112@gmail.com"]
+    ],
+    [
+        r"what is Koyilbek's phone number|phone|contact number",
+        ["Koyilbek's phone number is +82-010-2253-3010"]
+    ],
+    [
+        r"how can I contact Koyilbek|contact",
+        ["You can contact Koyilbek via email at valievkoyiljon112@gmail.com or through his LinkedIn profile: https://www.linkedin.com/in/koyiljonvaliev2003/"]
+    ],
+    [
+        r"portfolio|website",
+        ["You can check out Koyilbek's portfolio at: https://valiev-koyiljon.github.io/Web/"]
+    ],
+
+    # Professional Background
+    [
+        r"what is Koyilbek's current role|current position",
+        ["Koyilbek currently works as an AI Engineer at Recs Innovation Ltd in Naju, South Korea. He develops bidding optimization systems and creates solar power forecasting frameworks using advanced ML/DL techniques."]
+    ],
+    [
+        r"leadership experience|team lead role",
+        ["Koyilbek served as AI Team Lead at Recs Innovation Ltd (March 2024 - July 2024) where he:\n- Led the development of an anomaly detection system for photovoltaic sensors\n- Managed data pipeline processing 1.3M+ sensor readings daily\n- Established MLflow experimentation framework\n- Led an AI team and coordinated with executives and international stakeholders"]
+    ],
+    [
+        r"work at Recs Innovation|Recs experience",
+        ["Koyilbek has progressed through several roles at Recs Innovation Ltd:\n1. Currently: AI Engineer (July 2024 - Present)\n- Developing bidding optimization systems\n- Creating solar power forecasting frameworks\n2. Previously: AI Team Lead (March 2024 - July 2024)\n- Led anomaly detection system development\n- Managed AI team and data pipeline\n3. Initially: AI Intern (Feb 2024 - March 2024)\n- Implemented Autoencoder models for sensor data"]
+    ],
+
+    # Skills and Expertise
+    [
+        r"technical skills|skills|expertise",
+        ["Koyilbek has expertise in:\n1. Programming: Python\n2. ML/DL Frameworks: PyTorch, TensorFlow, Transformers, PEFT, StableBaselines3\n3. Data Science: NumPy, Pandas, SciPy, Matplotlib, Seaborn\n4. LLMs: LLAMA, Ollama, GPT\n5. DevOps: Git, GitHub, Docker, FastAPI\n6. Optimization: Optuna, Accelerate\n7. NLP: NLTK\n8. RL: OpenAI Gym"]
+    ],
+    [
+        r"AI and ML expertise|AI experience|ML experience",
+        ["Koyilbek's AI and ML expertise includes:\n1. Deep Learning: PyTorch, TensorFlow, Neural Networks\n2. Machine Learning: Scikit-learn, Time Series Analysis\n3. Large Language Models: LLAMA, GPT, PEFT\n4. Computer Vision: YOLO, OpenCV\n5. Reinforcement Learning: OpenAI Gym, StableBaselines3\n6. MLOps: MLflow, Docker, FastAPI"]
+    ],
+    [
+        r"energy management systems|solar power experience",
+        ["At Recs Innovation Ltd, Koyilbek developed solar power forecasting systems using hybrid LSTM-CNN models and reinforcement learning. He achieved a 0.7% error rate in bidding optimization and integrated predictions into Sun-Q EMS. His work includes:\n- Solar power forecasting using custom neural networks\n- Bidding optimization systems\n- Anomaly detection for photovoltaic sensors"]
+    ],
+
+    # Education
+    [
+        r"educational background|education|study",
+        ["Koyilbek's education:\n1. Bachelor's in Artificial Intelligence from Woosong University (2021-2025)\n2. Mathematics and Physics from High School #13 in Ferghana Region (2020-2021)"]
+    ],
+    [
+        r"university|college",
+        ["Koyilbek attends Woosong University, pursuing a Bachelor's degree in Artificial Intelligence (2021-2025)"]
+    ],
+
+    # Projects
+    [
+        r"major projects|completed projects",
+        ["Koyilbek's major projects include:\n1. Solar Power Forecasting System at Recs Innovation\n2. Anomaly Detection System for photovoltaic sensors\n3. Trash Bag Optimization using YOLOv8\n4. Real-time Face Mask Detection System\n5. Architectural Drawing Annotation System"]
+    ],
+    [
+        r"solar power forecasting|solar system",
+        ["At Recs Innovation Ltd, Koyilbek developed solar power forecasting systems using hybrid LSTM-CNN models and reinforcement learning. He achieved a 0.7% error rate in bidding optimization and integrated predictions into Sun-Q EMS."]
+    ],
+    [
+        r"capstone project|university project",
+        ["Koyilbek's team won 1st Place in Woosong University's capstone project contest, competing against 200+ teams from 29 departments. They developed an AI-based solution for optimizing garbage collection in South Korea using YOLOv8 technology."]
+    ],
+
+    # Achievements
+    [
+        r"awards won|competitions won",
+        ["Koyilbek's notable achievements include:\n1. 1st Place in Woosong University Capstone Contest (2023)\n2. 2nd Place in Machine Learning Learning Concert Competition (2023)\n3. 1st Place in IoT Learning Concert Competition (2023)\n4. 1st Place in School Chess Competition (2013)\n5. 2nd Place in Ferghana District Chess Competition (2013)\n6. 1st Place in School Russian Language Competition (2015)\n7. 2nd Place in Ferghana District English Language Competition (2019)"]
+    ],
+    [
+        r"notable achievements|accomplishments",
+        ["Koyilbek's notable achievements include:\n1. Professional Achievements:\n- Rapid career progression at Recs Innovation Ltd\n- Development of successful AI systems for energy management\n- Leading AI team and projects\n2. Academic Achievements:\n- 1st Place in Woosong University Capstone Contest\n- Multiple competition wins in Machine Learning and IoT\n3. Early Achievements:\n- Multiple wins in chess and language competitions"]
+    ],
+
+    # Greetings and Closure
+    [
+        r"hi|hello|hey",
+        ["Hello! I'm Koyilbek's chatbot. How can I assist you?", "Hey there! How can I help you today?"]
+    ],
+    [
+        r"thank you|thanks",
+        ["You're welcome!", "Happy to help!"]
+    ],
+    [
+        r"bye|goodbye",
+        ["Goodbye! Have a great day!", "Bye! Take care."]
     ]
+
+
+    
 ]
 
 questions = [
