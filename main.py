@@ -2,126 +2,103 @@ import streamlit as st
 from nltk.chat.util import Chat, reflections
 
 pairs = [
-   
-[
-        r"work experience",
-        [
-            "Koyilbek has a diverse range of work experiences:",
-            "1. AI Researcher & AI Engineer at Woosong University Capstone Project (Sep 2023 - Dec 2023): Optimizing trash bag collection using YOLOv8.",
-            "2. AI Research & Computer Vision Intern at Sequus PTY LTD (Jun 2023 - Oct 2023): Annotating construction plan drawings and automating annotation process.",
-            "3. Computer Vision & IoT Intern at The Sparks Foundation (May 2023 - Jun 2023): Developing a real-time face mask detection system."
-        ]
-    ],
-
     [
-        
-        r"hi|hello|hey",
-        ["Hello!", "Hey there!", "Hi!"]
-    ],
-    [
-        r"how are you ?",
-        ["I'm doing well, thank you.", "I'm fine, thanks for asking!"]
-    ],
-    [
-        r"what is your name ?",
-        ["You can call me ChatBot.", "I'm ChatBot!"]
-    ],
-    [
-        r"bye|goodbye",
-        ["Goodbye!", "Bye! Take care."]
-    ],
-    [
-        r"(.*) your name (.*)",
-        ["My name is ChatBot."]
-    ],
-    [
-        r"(.*) (age|old) ?",
-        ["Koyilbek is 21 years old"]
-    ],
-    [
-        r"(.*) (created|made) ?",
-        ["I was created using Python programming language."]
-    ],
-    [
-        r"(.*) (portfolio) ?",
-        ["You can check out Koyilbek's portfolio at their website: https://valiev-koyiljon.github.io/Web/"]
-    ],
-      [
         r"hi|hello|hey",
         ["Hello! I'm Koyilbek's chatbot. How can I assist you?", "Hey there! How can I help you today?"]
     ],
     [
         r"who are you|what are you",
-        ["I'm a chatbot designed to provide information about Koyilbek. What do you want to know?", "I'm Koyilbek's virtual assistant. How can I assist you?"]
+        ["I'm a chatbot designed to provide information about Koyilbek, an AI engineer from Uzbekistan. How can I assist you?", "I'm Koyilbek's virtual assistant. I can tell you about his experience, skills, and achievements."]
     ],
     [
         r"(.*) name ?",
-        ["My name is Koyilbek.", "I am Koyilbek from Uzbekistan."]
+        ["My name is Koyilbek.", "I am Koyilbek from Uzbekistan, a passionate AI engineer dedicated to building intelligent systems."]
     ],
     [
         r"how old are you|age",
-        ["Koyilbek is 21 years old."]
+        ["Koyilbek was born in 2003."]
     ],
     [
         r"email",
-        ["Koyilbek's email is valievkoyiljon112@gmail.com."]
+        ["Koyilbek's email is valievkoyiljon112@gmail.com"]
     ],
     [
         r"phone number|contact number",
-        ["Koyilbek's phone number is +82-010-2253-3010."]
+        ["Koyilbek's phone number is +82-010-2253-3010"]
     ],
     [
         r"current location|where do you live",
-        ["Koyilbek currently resides in Daejeon, South Korea."]
+        ["Koyilbek currently resides in Daejeon, South Korea"]
     ],
     [
         r"where are you from|nationality",
-        ["Koyilbek is from Uzbekistan."]
+        ["Koyilbek is from Uzbekistan"]
     ],
     [
         r"skills|expertise|proficiency",
-        ["Koyilbek has expertise in Python, OpenCV, Git, PyTorch, Streamlit, Scikit-Learn, TensorFlow, YOLO, Matplotlib, Seaborn, Pandas, NumPy, FastAPI, Scipy, Transformer, Selenium, and Django."]
+        ["Koyilbek has expertise in:\n1. Programming: Python\n2. ML/DL Frameworks: PyTorch, TensorFlow, Transformers, PEFT, StableBaselines3\n3. Data Science: NumPy, Pandas, SciPy, Matplotlib, Seaborn\n4. LLMs: LLAMA, Ollama, GPT\n5. DevOps: Git, GitHub, Docker, FastAPI\n6. Optimization: Optuna, Accelerate\n7. NLP: NLTK\n8. RL: OpenAI Gym"]
     ],
     [
-        r"work experience",
+        r"work experience|job history",
         [
-            "Koyilbek worked as an AI Researcher & AI Engineer at Woosong University Capstone Project from Sep 2023 to Dec 2023, focusing on optimizing trash bag collection using YOLOv8.",
-            "Koyilbek also worked as an AI Research & Computer Vision Intern at Sequus PTY LTD from June 2023 to October 2023, annotating construction plan drawings and automating the annotation process.",
-            "Furthermore, Koyilbek served as a Computer Vision & IoT Intern at The Sparks Foundation from May 2023 to June 2023, developing a real-time face mask detection system."
+            "Koyilbek's work experience includes:\n\n1. AI Engineer & Team Lead at Recs Innovation Ltd (Feb 2024 - Present):\n- Started as AI Intern (Feb-Mar 2024)\n- Promoted to AI Team Lead (Mar-Jul 2024)\n- Currently working as AI Engineer (Jul 2024-Present)\n\nAs Team Lead:\n- Led anomaly detection system development for photovoltaic sensors\n- Built automated data pipeline processing 1.3M+ daily sensor readings\n- Managed AI team and coordinated with international stakeholders\n\n2. AI Researcher at Woosong University (Sep 2023 - Dec 2023):\n- Led trash bag collection optimization project using YOLOv8\n\n3. AI Research & Computer Vision Intern at Sequus PTY LTD (Jun 2023 - Aug 2023)\n\n4. Computer Vision & IoT Intern at The Sparks Foundation (May 2023 - Jun 2023)"
+        ]
+    ],
+    [
+        r"leadership experience|team lead",
+        [
+            "Koyilbek served as AI Team Lead at Recs Innovation Ltd (March 2024 - July 2024) where he:\n- Led the development of an anomaly detection system for photovoltaic sensors\n- Managed data pipeline processing 1.3M+ sensor readings daily\n- Established MLflow experimentation framework\n- Led an AI team and coordinated with executives and international stakeholders"
+        ]
+    ],
+    [
+        r"current role|recent work",
+        [
+            "Koyilbek has progressed through several roles at Recs Innovation Ltd:\n1. Currently: AI Engineer (July 2024 - Present)\n- Developing bidding optimization systems\n- Creating solar power forecasting frameworks\n2. Previously: AI Team Lead (March 2024 - July 2024)\n- Led anomaly detection system development\n- Managed AI team and data pipeline\n3. Initially: AI Intern (Feb 2024 - March 2024)\n- Implemented Autoencoder models for sensor data"
+        ]
+    ],
+    [
+        r"career progression|promotions",
+        [
+            "At Recs Innovation Ltd, Koyilbek showed rapid career growth:\n1. Started as AI Intern (Feb 2024)\n2. Promoted to AI Team Lead (March 2024)\n3. Transitioned to AI Engineer role (July 2024)\nEach role involved increasing responsibilities in AI development and team management."
         ]
     ],
     [
         r"education",
         [
-            "Koyilbek is pursuing a Bachelor's in Artificial Intelligence from Woosong University (2021-2025).",
-            "Previously, Koyilbek studied Mathematics and Physics from High School #13 in the Ferghana Region (2020-2021)."
+            "Koyilbek's education:\n1. Bachelor's in Artificial Intelligence from Woosong University (2021-2025)\n2. Mathematics and Physics from High School #13 in Ferghana Region (2020-2021)"
         ]
     ],
     [
         r"achievements|accomplishments",
         [
-            "Koyilbek has several achievements including winning chess and language competitions, earning recognition in the Machine Learning class Learning Concert Competition, and securing multiple awards in various contests at Woosong University."
+            "Koyilbek's notable achievements include:\n1. 1st Place in Woosong University Capstone Contest (2023)\n2. 2nd Place in Machine Learning Learning Concert Competition (2023)\n3. 1st Place in IoT Learning Concert Competition (2023)\n4. 1st Place in School Chess Competition (2013)\n5. 2nd Place in Ferghana District Chess Competition (2013)\n6. 1st Place in School Russian Language Competition (2015)\n7. 2nd Place in Ferghana District English Language Competition (2019)"
         ]
     ],
     [
         r"activities|Woosong Activities|extracurricular",
         [
-            "At Woosong University, Koyilbek volunteered as a Sol-Green Police Volunteer, taking care of the university environment, and was also a Python Programming Club Instructor."
+            "At Woosong University, Koyilbek:\n1. Served as Sol-Green Police Volunteer (Jul 2023 - Oct 2023)\n2. Worked as Python Programming Club Instructor (Oct 2021 - Dec 2021)"
         ]
     ],
     [
         r"capstone project|major project",
         [
-            "Koyilbek contributed to securing 1st Place in Woosong University's major capstone project contest, implementing an AI-based solution to optimize garbage collection in South Korea."
+            "Koyilbek's team won 1st Place in Woosong University's capstone project contest, competing against 200+ teams from 29 departments. They developed an AI-based solution for optimizing garbage collection in South Korea using YOLOv8 technology."
         ]
     ],
     [
-        r"thank you|thanks",
-        ["You're welcome!", "My pleasure to assist you!"]
+        r"solar power|energy management",
+        [
+            "At Recs Innovation Ltd, Koyilbek developed solar power forecasting systems using hybrid LSTM-CNN models and reinforcement learning. He achieved a 0.7% error rate in bidding optimization and integrated predictions into Sun-Q EMS."
+        ]
     ],
     [
-        r"goodbye|bye",
-        ["Goodbye! Have a great day!", "Bye! Take care."]
+        r"How can I contact Koyilbek",
+        ["You can contact Koyilbek via email at valievkoyiljon112@gmail.com or through his LinkedIn profile: https://www.linkedin.com/in/koyiljonvaliev2003/"]
+    ],
+    [
+        r"(.*) (portfolio|website) ?",
+        ["You can check out Koyilbek's portfolio at: https://valiev-koyiljon.github.io/Web/"]
     ],
     [
         r"Trash Bag Segmentation|Optimizing trash bag collection",
@@ -131,98 +108,51 @@ pairs = [
         r"Real Time Face Mask Detection|Face mask identification",
         ["This project used PyTorch, OpenCV, and MTCNN for face mask identification in real-time video feeds."]
     ],
-       [
-        r"Tell me about Koyilbek",
-        ["Koyilbek is an AI and Machine Learning Engineer from Uzbekistan. He specializes in Python, deep learning, computer vision, and has experience in developing and deploying ML models."]
+    [
+        r"thank you|thanks",
+        ["You're welcome!", "Happy to help!"]
     ],
     [
-        r"What skills does Koyilbek have",
-        ["Koyilbek has skills in Python, OpenCV, Git, PyTorch, TensorFlow, Scikit-Learn, YOLO, Matplotlib, Pandas, NumPy, FastAPI, Scipy, Streamlit, Django, and more."]
-    ],
-    [
-        r"What work experience does Koyilbek have",
-        ["Koyilbek worked as an AI Researcher & Engineer, Computer Vision & IoT Intern, and contributed to various projects focusing on trash bag optimization, face mask detection, weather classification, IoT systems, healthcare, and more."]
-    ],
-    [
-        r"What is Koyilbek's educational background",
-        ["Koyilbek is pursuing a Bachelor's in Artificial Intelligence from Woosong University and completed Mathematics and Physics in high school."]
-    ],
-    [
-        r"What awards has Koyilbek won",
-        ["Koyilbek has won awards in chess competitions, language competitions, machine learning competitions, and university capstone contests."]
-    ],
-    [
-        r"What projects have Koyilbek completed",
-        ["Koyilbek completed projects on trash bag optimization, face mask detection, weather classification, exploratory data analysis, IoT-based systems, kidney illness detection, banking, insurance, and house price prediction."]
-    ],
-    [
-        r"How can I contact Koyilbek",
-        ["You can contact Koyilbek via email at valievkoyiljon112@gmail.com or through his LinkedIn profile: https://www.linkedin.com/in/koyiljonvaliev2003/"]
-    ],
-    [
-        r"Tell me about Koyilbek's portfolio",
-        ["You can access Koyilbek's portfolio here: https://valiev-koyiljon.github.io/Web/"]
-    ],
-    # .
-    # Additional variations of questions and responses can be added here
+        r"bye|goodbye",
+        ["Goodbye! Have a great day!", "Bye! Take care."]
+    ]
 ]
 
-
-
 questions = [
-    # Greeting
-    "Hi, hello, hey",
-    "How are you ?",
-
-    # Personal Information
-    "What is your name ?",
-    "What is Koyilbek's name ?",
-    "What is your age ?",
-    "How old are you ?",
-    "Who are you? / What are you?",
+    # Basic Information
+    "How old is Koyilbek?",
+    "Where is Koyilbek from?",
+    "Where does Koyilbek currently live?",
 
     # Contact Information
-    "Email",
-    "Phone number / Contact number",
+    "What is Koyilbek's email?",
+    "What is Koyilbek's phone number?",
     "How can I contact Koyilbek?",
+    "What is Koyilbek's portfolio website?",
 
-    # Location
-    "Current location / Where do you live?",
-    "Where are you from / Nationality?",
+    # Professional Background
+    "What is Koyilbek's current role?",
+    "What is Koyilbek's leadership experience?",
+    "Tell me about Koyilbek's work at Recs Innovation",
+    "What was Koyilbek's role as Team Lead?",
 
-    # Skills
-    "Skills / Expertise / Proficiency",
-
-    # Work Experience
-    "Work experience",
-    "What work experience does Koyilbek have?",
+    # Skills and Expertise
+    "What are Koyilbek's technical skills?",
+    "What is Koyilbek's AI and ML expertise?",
+    "What is Koyilbek's experience with energy management systems?",
 
     # Education
-    "Education",
     "What is Koyilbek's educational background?",
-
-    # Achievements
-    "Achievements / Accomplishments",
-    "What awards has Koyilbek won?",
-
-    # Activities
-    "Activities / Woosong Activities / Extracurricular",
+    "What university does Koyilbek attend?",
 
     # Projects
-    "Capstone project / Major project",
-    "What projects have Koyilbek completed?",
+    "What major projects has Koyilbek completed?",
+    "Tell me about Koyilbek's solar power forecasting system",
+    "What was Koyilbek's capstone project?",
 
-    # General Information
-    "Tell me about Koyilbek",
-    "What skills does Koyilbek have?",
-
-    # Specific Projects
-    "Trash Bag Segmentation / Optimizing trash bag collection",
-    "Real Time Face Mask Detection / Face mask identification",
-
-    # Closure
-    "Thank you / Thanks",
-    "Goodbye / Bye"
+    # Achievements
+    "What awards has Koyilbek won?",
+    "What are Koyilbek's notable achievements?"
 ]
 
 
